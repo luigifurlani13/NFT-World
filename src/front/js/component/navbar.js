@@ -29,6 +29,7 @@ export const NavigationBar = () => {
             <Nav.Link href="#action2">Explore</Nav.Link>
             <Nav.Link href="#">Create</Nav.Link>
             <NavDropdown
+              className="dropdown dropdown-left"
               title={<FontAwesomeIcon icon={faUser} />}
               id="navbarScrollingDropdown"
             >

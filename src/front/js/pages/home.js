@@ -1,7 +1,9 @@
 import React, { useContext } from "react";
 import { Context } from "../store/appContext";
+import { Row } from "react-bootstrap";
 import { Children } from "../component/children";
-import { homeCard } from "../component/homeCard";
+import { Cartas } from "../component/homecard";
+import { Title } from "../component/hometitle";
 import "../../styles/home.css";
 
 export const Home = () => {
@@ -9,7 +11,11 @@ export const Home = () => {
 
   return (
     <div className="mt-5">
-      <homeCard />
+      <Row className="d-flex">
+        <Title />
+        <Cartas />
+      </Row>
+
       <Children />
     </div>
   );
