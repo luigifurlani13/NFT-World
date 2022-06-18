@@ -25,7 +25,7 @@ export const NavigationBar = () => {
             />
             <Button variant="outline-success">Search</Button>
           </Form>
-          <Form className="d-flex" x>
+          <Form className="d-flex">
             <Nav.Link href="#action2">Explore</Nav.Link>
             <Nav.Link href="#">Create</Nav.Link>
             <NavDropdown

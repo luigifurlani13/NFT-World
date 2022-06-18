@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import { Context } from "../store/appContext";
 import { Children } from "../component/children";
+import { homeCard } from "../component/homeCard";
 import "../../styles/home.css";
 
 export const Home = () => {
@@ -8,6 +9,7 @@ export const Home = () => {
 
   return (
     <div className="mt-5">
+      <homeCard />
       <Children />
     </div>
   );

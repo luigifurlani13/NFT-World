@@ -19,14 +19,14 @@ export const Children = () => {
           style={{ width: "100%" }}
         />
       </Col>
-      <Col className="box">
+      <Col sm={4} className="box">
         <Image
           src="https://image-cdn.hypb.st/https%3A%2F%2Fhypebeast.com%2Fimage%2F2022%2F01%2Fmigos-takeoff-bored-ape-yacht-club-mutant-nft-purchase-000.jpg?w=960&cbr=1&q=90&fit=max"
           style={{ width: "100%" }}
         />
       </Col>
 
-      <Col className="box">
+      <Col sm={4} className="box">
         <Image
           src="https://image-cdn.hypb.st/https%3A%2F%2Fhypebeast.com%2Fimage%2F2022%2F01%2Fmigos-takeoff-bored-ape-yacht-club-mutant-nft-purchase-000.jpg?w=960&cbr=1&q=90&fit=max"
           style={{ width: "100%" }}
@@ -47,7 +47,7 @@ export const Children = () => {
         />
       </Col>
 
-      <Col className="box">
+      <Col sm={4} className="box">
         <Image
           src="https://image-cdn.hypb.st/https%3A%2F%2Fhypebeast.com%2Fimage%2F2022%2F01%2Fmigos-takeoff-bored-ape-yacht-club-mutant-nft-purchase-000.jpg?w=960&cbr=1&q=90&fit=max"
           style={{ width: "100%" }}
