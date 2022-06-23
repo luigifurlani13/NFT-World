@@ -5,8 +5,10 @@ import {
   Row,
   Col,
   ListGroup,
-  ListGroupItem,
+  Button,
   Image,
+  SplitButton,
+  Dropdown,
 } from "react-bootstrap";
 import { Context } from "../store/appContext";
 
@@ -48,23 +50,36 @@ export const Collections = () => {
   ];
   return (
     <Container fluid>
+      <SplitButton variant="primary">
+        <Dropdown.Item eventKey="1">Action</Dropdown.Item>
+        <Dropdown.Item eventKey="2">Another action</Dropdown.Item>
+        <Dropdown.Item eventKey="3" active>
+          Active Item
+        </Dropdown.Item>
+        <Dropdown.Divider />
+        <Dropdown.Item eventKey="4">Separated link</Dropdown.Item>
+      </SplitButton>
       {collectibles.map((item, i) => {
         return (
           <ListGroup key={i}>
             <ListGroup.Item action as="li" className="d-flex">
-              <h1>{item.number}</h1>{" "}
+              <h5>{item.number}</h5>{" "}
               <Image
+                roundedCircle
                 style={{ width: "3rem", height: "3rem" }}
                 src={item.image}
               />{" "}
-              <h4>
-                {item.title}
-                <br /> Floor Price:
-              </h4>
+              <span>
+                <h5>{item.title}</h5>
+                <h6>Floor Price:</h6>
+              </span>
             </ListGroup.Item>
           </ListGroup>
         );
       })}
+      <Button variant="primary" className="mx-auto">
+        Go to Rankings
+      </Button>
     </Container>
   );
 };
