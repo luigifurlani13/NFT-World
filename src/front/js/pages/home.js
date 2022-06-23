@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import { Context } from "../store/appContext";
-import { Row } from "react-bootstrap";
+import { Row, Col, Container } from "react-bootstrap";
 import { Children } from "../component/children";
 import { Cartas } from "../component/homecard";
 import { Title } from "../component/hometitle";
@@ -10,13 +10,18 @@ export const Home = () => {
   const { store, actions } = useContext(Context);
 
   return (
-    <div className="mt-5">
-      <Row className="d-flex">
-        <Title />
-        <Cartas />
+    <Container fluid className="mt-5">
+      <Row>
+        <Col>
+          <Title />
+        </Col>
+        <Col>
+          <Cartas />
+        </Col>
       </Row>
 
       <Children />
-    </div>
+      <Children />
+    </Container>
   );
 };
