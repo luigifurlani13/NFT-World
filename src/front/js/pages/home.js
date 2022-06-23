@@ -4,6 +4,7 @@ import { Row, Col, Container } from "react-bootstrap";
 import { Children } from "../component/children";
 import { Cartas } from "../component/homecard";
 import { Title } from "../component/hometitle";
+import { Collections } from "../component/collections";
 import "../../styles/home.css";
 
 export const Home = () => {
@@ -12,15 +13,13 @@ export const Home = () => {
   return (
     <Container fluid className="mt-5">
       <Row>
-        <Col>
-          <Title />
-        </Col>
-        <Col>
-          <Cartas />
-        </Col>
+        <Title />
+
+        <Cartas />
       </Row>
 
       <Children />
+      <Collections />
       <Children />
     </Container>
   );
