@@ -50,14 +50,10 @@ export const Collections = () => {
   ];
   return (
     <Container fluid>
-      <SplitButton variant="primary">
-        <Dropdown.Item eventKey="1">Action</Dropdown.Item>
-        <Dropdown.Item eventKey="2">Another action</Dropdown.Item>
-        <Dropdown.Item eventKey="3" active>
-          Active Item
-        </Dropdown.Item>
-        <Dropdown.Divider />
-        <Dropdown.Item eventKey="4">Separated link</Dropdown.Item>
+      <SplitButton title="Top collections over last 24 hours" variant="none">
+        <Dropdown.Item eventKey="1">last 24 hours</Dropdown.Item>
+        <Dropdown.Item eventKey="2">last 7 days</Dropdown.Item>
+        <Dropdown.Item eventKey="3">last 30 days</Dropdown.Item>
       </SplitButton>
       {collectibles.map((item, i) => {
         return (

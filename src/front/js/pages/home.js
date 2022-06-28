@@ -5,6 +5,7 @@ import { Children } from "../component/children";
 import { Cartas } from "../component/homecard";
 import { Title } from "../component/hometitle";
 import { Collections } from "../component/collections";
+import { Trending } from "../component/trending";
 import "../../styles/home.css";
 
 export const Home = () => {
@@ -20,6 +21,7 @@ export const Home = () => {
 
       <Children />
       <Collections />
+      <Trending />
       <Children />
     </Container>
   );
