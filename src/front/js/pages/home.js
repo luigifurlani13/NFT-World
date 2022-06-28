@@ -6,6 +6,7 @@ import { Cartas } from "../component/homecard";
 import { Title } from "../component/hometitle";
 import { Collections } from "../component/collections";
 import { Trending } from "../component/trending";
+import { CreateSell } from "../component/createAndSell";
 import "../../styles/home.css";
 
 export const Home = () => {
@@ -15,14 +16,13 @@ export const Home = () => {
     <Container fluid className="mt-5">
       <Row>
         <Title />
-
         <Cartas />
       </Row>
-
       <Children />
       <Collections />
       <Trending />
       <Children />
+      <CreateSell />
     </Container>
   );
 };
