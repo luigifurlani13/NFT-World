@@ -18,6 +18,7 @@ export const Home = () => {
         <Title />
         <Cartas />
       </Row>
+      <h3>Notable Drops</h3>
       <Children />
       <Collections />
       <Trending />
